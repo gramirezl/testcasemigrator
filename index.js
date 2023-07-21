@@ -18,7 +18,7 @@ const start = async () => {
     var arrayData = await readExcel(fileName, sheetNameArray);
 
     var matrixData = GetMatrixData(arrayData);
-    writeCsv('TestCase.csv', matrixData);
+    writeCsv(`${config.OutputLocation}${config.fileName}.csv`, matrixData);
     
 }
 
