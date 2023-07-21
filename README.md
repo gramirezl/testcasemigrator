@@ -24,5 +24,5 @@ Una vez configurados los parámetros se tendrá que abrir una consola en la ubic
 
 
 Colaboradores:
--Gustavo David Ramirez Ledesma
--Osvaldo Alfredoo Zamora Reyes
+- Gustavo David Ramirez Ledesma
+- Osvaldo Alfredoo Zamora Reyes
