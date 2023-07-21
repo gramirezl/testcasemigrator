@@ -8,13 +8,13 @@ var methods = {
   ConvertOctaneToAzure: async function(){
     format.extend(String.prototype, {})
 
-    var fileName = `./${config.fileFolder}/${config.fileName}`;
+    var fileName = `${config.FileFolder}/${config.FileName}`;
     
     var sheetNameArray = await excelReader.data.readExcelSheets(fileName);
     var arrayData = await excelReader.data.readExcel(fileName, sheetNameArray);
 
     var matrixData = GetMatrixData(arrayData);
-    writeFile.data.writeCsv(`${config.OutputLocation}${config.fileName}.csv`, matrixData);
+    writeFile.data.writeCsv(`${config.OutputLocation}${config.FileName}.csv`, matrixData);
   }
 }
 

@@ -3,7 +3,7 @@ const constants = require('./constants/constants');
 const octaneToAzure = require('./services/almOctaneToAzure');
 
 const start = async () => {
-    if (config.origin == constants.octaneConstant && config.destiny == constants.azureConstant){
+    if (config.Origin == constants.octaneConstant && config.Destiny == constants.azureConstant){
       await octaneToAzure.data.ConvertOctaneToAzure();
     }
 }
