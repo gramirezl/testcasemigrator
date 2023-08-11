@@ -14,7 +14,8 @@ var methods = {
     var arrayData = await excelReader.data.readExcel(fileName, sheetNameArray);
 
     var matrixData = GetMatrixData(arrayData);
-    writeFile.data.writeCsv(`${config.OutputLocation}${config.FileName}.csv`, matrixData);
+    var nameArray = config.FileName.split('.');
+    writeFile.data.writeCsv(`${config.OutputLocation}${nameArray[0]}.csv`, matrixData);
   }
 }
 
